@@ -1,0 +1,26 @@
+<html>
+
+<head>
+    <%- include('partials/head'); %>
+</head>
+
+<body>
+    <%- include('partials/navbar'); %>
+    <br><br>
+    <%- include('partials/headline'); %>
+
+    <div class="container">
+        <div class="row">
+            <% for(var i=1; i <= imagesCount; i++){%>
+            <div class="col-md-6">
+                <div class="thumbnail">
+                    <img src="/images/<%=city%>/<%=city%>-<%=i%>.jpg" alt="<%=city%>" >
+                </div>
+            </div>
+            <%}%>
+      </div>
+    </div>
+
+    <%- include('partials/jsIncludes'); %>
+</body>
+</html>
